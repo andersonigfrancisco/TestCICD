@@ -1,6 +1,6 @@
 using System;
 
-namespace ingtegracaoTeste
+namespace Api
 {
     public class WeatherForecast
     {

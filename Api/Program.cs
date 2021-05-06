@@ -7,7 +7,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 
-namespace ingtegracaoTeste
+namespace Api
 {
     public class Program
     {
@@ -20,7 +20,7 @@ namespace ingtegracaoTeste
             Host.CreateDefaultBuilder(args)
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
-                    webBuilder.UseUrls("http://*.1001");
+                    webBuilder.UseUrls("http://*:1000");
                     webBuilder.UseStartup<Startup>();
                 });
     }
